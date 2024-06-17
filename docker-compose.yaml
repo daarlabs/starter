@@ -1,0 +1,52 @@
+services:
+  starter-example:
+    tty: true
+    container_name: starter-example
+    image: starter-example
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NAME: example
+        PORT: 80
+    ports:
+      - 80:80
+    networks:
+      - starter
+
+  starter-postgres:
+    tty: true
+    container_name: starter-postgres
+    image: postgres:16-alpine
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=starter
+      - POSTGRES_USER=starter
+      - POSTGRES_DB=starter
+    volumes:
+      - starter_postgres_data:/var/lib/postgresql/data
+    networks:
+      - starter
+
+  starter-redis:
+    tty: true
+    container_name: starter-redis
+    image: redis:7.2-alpine
+    restart: always
+    ports:
+      - "6379:6379"
+    command: redis-server
+    volumes:
+      - starter_redis_data:/data
+    networks:
+      - starter
+
+volumes:
+  starter_postgres_data:
+  starter_redis_data:
+
+networks:
+  starter:
+    name: starter

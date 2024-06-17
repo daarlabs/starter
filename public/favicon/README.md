@@ -1,0 +1,1 @@
+You can create your own icon with [Favicon generator](https://realfavicongenerator.net/).
