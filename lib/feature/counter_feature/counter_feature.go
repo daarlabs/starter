@@ -18,16 +18,12 @@ func (c *Counter) Name() string {
 	return "counter"
 }
 
-func (c *Counter) Mount() {
-	if !c.Request().Is().Action() {
-		c.Count = 0
-	}
-}
+func (c *Counter) Mount() {}
 
 func (c *Counter) Node() Node {
 	return Div(
 		tempest.Class().Grid().Gap(4).TextCenter(),
-		c.createCount(),
+		c.createCounter(),
 		Div(
 			tempest.Class().Grid().GridCols(2).Gap(4),
 			c.createAddButton(),
@@ -38,15 +34,15 @@ func (c *Counter) Node() Node {
 
 func (c *Counter) HandleAdd() error {
 	c.Count++
-	return c.Response().Render(c.createCount())
+	return c.Response().Render(c.createCounter())
 }
 
 func (c *Counter) HandleReset() error {
 	c.Count = 0
-	return c.Response().Render(c.createCount())
+	return c.Response().Render(c.createCounter())
 }
 
-func (c *Counter) createCount() Node {
+func (c *Counter) createCounter() Node {
 	return Div(
 		Id(hx.Id("counter")),
 		Span(
