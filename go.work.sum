@@ -12,10 +12,14 @@ github.com/daarlabs/arcanum v0.1.3 h1:AM2BUUnyW8Z4k2RTtJZ8nQzCiwejbMebmYrctBZUyR
 github.com/daarlabs/arcanum v0.1.3/go.mod h1:JkIZDIKzWjwalr9DDi0KL3CvLtP/VTPOBNAbBh3vFxQ=
 github.com/daarlabs/arcanum v0.1.4 h1:RDDfIv9ETAmg29bPMnX5JBuLbmieHuYExXflGrq8C1E=
 github.com/daarlabs/arcanum v0.1.4/go.mod h1:JkIZDIKzWjwalr9DDi0KL3CvLtP/VTPOBNAbBh3vFxQ=
+github.com/daarlabs/arcanum v0.1.5 h1:XfbkDvPIehCfNq4YDhDqYgDw9aFHKLhp3jpYPbLMzT4=
+github.com/daarlabs/arcanum v0.1.5/go.mod h1:JkIZDIKzWjwalr9DDi0KL3CvLtP/VTPOBNAbBh3vFxQ=
 github.com/daarlabs/farah v0.1.2 h1:2wQNZwnc9iNNl2ZEyWxS72tlTKDcziO+Ix7YF54ygJo=
 github.com/daarlabs/farah v0.1.2/go.mod h1:8sDlB0PgQ14gtKN5cy93CFGcv0ufbSF5ChCG7DFiCzI=
 github.com/daarlabs/farah v0.1.3 h1:4Vf2cF6hnKDUSMsNiNHt388IaxVzT37n2FdMzL8k5zc=
 github.com/daarlabs/farah v0.1.3/go.mod h1:8sDlB0PgQ14gtKN5cy93CFGcv0ufbSF5ChCG7DFiCzI=
+github.com/daarlabs/farah v0.1.4 h1:/DksDRqwAGEz+GJ8ZIfqCyzBWHuhVWTPJgrVbCVyxfE=
+github.com/daarlabs/farah v0.1.4/go.mod h1:AVxqv0Dp2/mLiw6/A35xy4j7x9RW0nvHn1RuEA1fIwQ=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 github.com/google/gofuzz v1.0.0 h1:A8PeW59pxE9IoFRqBp37U+mSNaQoZ46F1f0f863XSXw=

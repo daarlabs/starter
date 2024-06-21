@@ -3,8 +3,8 @@ module example
 go 1.22
 
 require (
-	github.com/daarlabs/arcanum v0.1.4
-	github.com/daarlabs/farah v0.1.3
+	github.com/daarlabs/arcanum v0.1.5
+	github.com/daarlabs/farah v0.1.4
 )
 
 require (
@@ -17,6 +17,7 @@ require (
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/go-redis/redis/v8 v8.11.5 // indirect
 	github.com/google/uuid v1.5.0 // indirect
+	github.com/gorilla/websocket v1.5.1 // indirect
 	github.com/iancoleman/strcase v0.3.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/compress v1.17.4 // indirect
