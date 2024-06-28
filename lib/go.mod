@@ -3,8 +3,8 @@ module lib
 go 1.22
 
 require (
-	github.com/daarlabs/arcanum v0.1.9
-	github.com/daarlabs/farah v0.1.6
+	github.com/daarlabs/arcanum v0.2.1
+	github.com/daarlabs/farah v0.1.7
 )
 
 require (
