@@ -2,7 +2,7 @@ package config
 
 import (
 	"os"
-
+	
 	"github.com/daarlabs/arcanum/cache/memory"
 	"github.com/daarlabs/arcanum/config"
 	"github.com/daarlabs/arcanum/form"
@@ -35,9 +35,9 @@ func New() config.Config {
 	name := os.Getenv("APP_NAME")
 	return config.Config{
 		App: config.App{
-			Name:   "starter-" + name,
-			Public: "/public/",
-			Assets: "/app/" + name + "/public/",
+			Name:           "starter-" + name,
+			PublicUrlPath:  "/public/",
+			PublicLocalDir: "/app/" + name + "/public/",
 		},
 		Cache: config.Cache{
 			Redis:  Redis(),
