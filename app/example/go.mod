@@ -3,8 +3,8 @@ module example
 go 1.22
 
 require (
-	github.com/daarlabs/arcanum v0.2.2
-	github.com/daarlabs/farah v0.1.7
+	github.com/daarlabs/arcanum v0.2.3
+	github.com/daarlabs/farah v0.1.8
 )
 
 require (
