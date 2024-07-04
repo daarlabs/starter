@@ -1,16 +1,16 @@
 package counter_feature
 
 import (
-	. "github.com/daarlabs/arcanum/gox"
-	"github.com/daarlabs/arcanum/hx"
-	"github.com/daarlabs/arcanum/mirage"
-	"github.com/daarlabs/arcanum/tempest"
 	"github.com/daarlabs/farah/ui/button_ui"
 	"github.com/daarlabs/farah/ui/icon_ui"
+	. "github.com/daarlabs/hirokit/gox"
+	"github.com/daarlabs/hirokit/hiro"
+	"github.com/daarlabs/hirokit/hx"
+	"github.com/daarlabs/hirokit/tempest"
 )
 
 type Counter struct {
-	mirage.Component
+	hiro.Component
 	Count int `json:"count"`
 }
 

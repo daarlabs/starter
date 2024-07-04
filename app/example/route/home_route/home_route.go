@@ -2,17 +2,17 @@ package home_route
 
 import (
 	"net/http"
-
-	"github.com/daarlabs/arcanum/mirage"
-
+	
+	. "github.com/daarlabs/hirokit/hiro"
+	
 	"example/handler/home_handler"
 )
 
-func HomeRoutes(app mirage.Mirage) {
+func HomeRoutes(app Hiro) {
 	app.Route(
 		"/",
 		home_handler.Home(),
-		mirage.Method(http.MethodGet),
-		mirage.Name("home"),
+		Method(http.MethodGet),
+		Name("home"),
 	)
 }

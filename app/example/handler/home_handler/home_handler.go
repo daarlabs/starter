@@ -1,9 +1,11 @@
 package home_handler
 
-import "github.com/daarlabs/arcanum/mirage"
+import (
+	"github.com/daarlabs/hirokit/hiro"
+)
 
-func Home() mirage.Handler {
-	return func(c mirage.Ctx) error {
+func Home() hiro.Handler {
+	return func(c hiro.Ctx) error {
 		c.Page().Set().Title("Starter - Home")
 		return c.Response().Render(HomePage(c))
 	}

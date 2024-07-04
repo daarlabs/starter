@@ -3,12 +3,12 @@ package config
 import (
 	"os"
 	
-	"github.com/daarlabs/arcanum/cache/memory"
-	"github.com/daarlabs/arcanum/config"
-	"github.com/daarlabs/arcanum/form"
-	"github.com/daarlabs/arcanum/mirage"
-	"github.com/daarlabs/arcanum/quirk"
-	"github.com/daarlabs/arcanum/tempest"
+	"github.com/daarlabs/hirokit/cache/memory"
+	"github.com/daarlabs/hirokit/config"
+	"github.com/daarlabs/hirokit/esquel"
+	"github.com/daarlabs/hirokit/form"
+	"github.com/daarlabs/hirokit/hiro"
+	"github.com/daarlabs/hirokit/tempest"
 )
 
 func init() {
@@ -43,8 +43,8 @@ func New() config.Config {
 			Redis:  Redis(),
 			Memory: memory.New(".cache"),
 		},
-		Database: map[string]*quirk.DB{
-			mirage.Main: Postgres(),
+		Database: map[string]*esquel.DB{
+			hiro.Main: Postgres(),
 		},
 		Form: form.Config{Limit: 256},
 		Router: config.Router{
