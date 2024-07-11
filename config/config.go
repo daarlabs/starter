@@ -20,13 +20,8 @@ func init() {
 				Url:   "https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap",
 			},
 		},
-		Styles: []string{
-			"https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css",
-		},
-		Scripts: []string{
-			"https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js",
-			"https://unpkg.com/htmx.org@1.9.12",
-		},
+		Styles:  []string{},
+		Scripts: []string{},
 	}
 	tempest.Start()
 }

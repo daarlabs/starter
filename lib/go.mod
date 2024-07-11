@@ -3,7 +3,7 @@ module lib
 go 1.22
 
 require (
-	github.com/daarlabs/hirokit v0.1.4
+	github.com/daarlabs/hirokit v0.1.7
 	github.com/daarlabs/farah v0.2.3
 )
 
