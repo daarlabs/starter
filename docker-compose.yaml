@@ -6,11 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        NAME: example
-        PORT: 80
     ports:
-      - 80:80
+      - 8000:8000
     networks:
       - starter
 
@@ -43,9 +40,25 @@ services:
     networks:
       - starter
 
+  starter-caddy:
+    image: caddy:2.7.6-alpine
+    tty: true
+    container_name: starter-caddy
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - starter_caddy_data:/data
+      - starter_caddy_config:/config
+    networks:
+      - starter
+
 volumes:
   starter_postgres_data:
   starter_redis_data:
+  starter_caddy_data:
+  starter_caddy_config:
 
 networks:
   starter:

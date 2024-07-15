@@ -17,5 +17,6 @@ WORKDIR /app/${APP_NAME}
 COPY . .
 
 RUN go install github.com/cespare/reflex@latest
+RUN go install github.com/daarlabs/hrx@v0.1.4
 
-ENTRYPOINT reflex -r '(\.go$|go\.mod|\.yaml$)' -s go run ./app/${APP_NAME}/
+ENTRYPOINT reflex -r '(\.go$|go\.mod|\.yaml$)' -s go run ./app/${APP_NAME}/ & hrx dev

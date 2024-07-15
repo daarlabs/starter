@@ -1,0 +1,8 @@
+http://localhost {
+	handle /.dev* {
+		reverse_proxy starter-example:1993
+	}
+	handle {
+		reverse_proxy starter-example:8000
+	}
+}

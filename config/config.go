@@ -5,6 +5,7 @@ import (
 	
 	"github.com/daarlabs/hirokit/cache/memory"
 	"github.com/daarlabs/hirokit/config"
+	"github.com/daarlabs/hirokit/env"
 	"github.com/daarlabs/hirokit/esquel"
 	"github.com/daarlabs/hirokit/form"
 	"github.com/daarlabs/hirokit/hiro"
@@ -40,6 +41,10 @@ func New() config.Config {
 		},
 		Database: map[string]*esquel.DB{
 			hiro.Main: Postgres(),
+		},
+		Dev: config.Dev{
+			LiveReload: env.Development(),
+			Tool:       env.Development(),
 		},
 		Form: form.Config{Limit: 256},
 		Router: config.Router{
